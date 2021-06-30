@@ -1,7 +1,7 @@
 {
-    "name": "scss-bundle",
+    "name": "@staxx6/scss-bundle",
     "version": "3.1.2",
-    "description": "Bundling SCSS files to one bundled file.",
+    "description": "Bundling SCSS files to one bundled file. Skips scssRender.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
@@ -27,10 +27,10 @@
     "bin": {
         "scss-bundle": "dist/cli/main.js"
     },
-    "author": "ReactWay <dev@reactway.com> (https://github.com/reactway)",
-    "bugs": "https://github.com/reactway/scss-bundle/issues",
-    "repository": "reactway/scss-bundle",
-    "homepage": "https://github.com/reactway/scss-bundle",
+    "author": "ReactWay <dev@reactway.com> (https://github.com/reactway) - Modified by staxx6 <staxx@hotmail.de>",
+    "bugs": "https://github.com/staxx6/scss-bundle/issues",
+    "repository": "staxx6/scss-bundle",
+    "homepage": "https://github.com/staxx6/scss-bundle",
     "license": "MIT",
     "devDependencies": {
         "@types/jest": "^24.0.23",

@@ -17,7 +17,7 @@ import { ImportFileNotFoundError } from "./errors/import-file-not-found-error";
 import { BundleResultHasNoContentError } from "./errors/bundle-result-has-no-content-error";
 import { OutFileNotDefinedError } from "./errors/out-file-not-defined-error";
 import { EntryFileNotDefinedError } from "./errors/entry-file-not-defined-error";
-import { renderScss } from "./utils/scss";
+// import { renderScss } from "./utils/scss";
 import { renderBundleInfo } from "./utils/bundle-info";
 import { renderArchy } from "./utils/archy";
 import { LogLevelDesc } from "loglevel";
@@ -65,7 +65,7 @@ async function build(
         throw new BundleResultHasNoContentError();
     }
 
-    await renderScss(project, config.includePaths, bundleResult.bundledContent);
+    // await renderScss(project, config.includePaths, bundleResult.bundledContent);
 
     await fs.mkdirp(path.dirname(config.outFile));
     await fs.writeFile(config.outFile, bundleResult.bundledContent);
